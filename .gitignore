@@ -1,0 +1,57 @@
+# .NET / Visual Studio build output
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+[Aa][Rr][Mm]/
+[Aa][Rr][Mm]64/
+bld/
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+[Ll]ogs/
+artifacts/
+
+# Visual Studio
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+*.userprefs
+*.ncrunch*
+*.crunch*.local.xml
+*.VisualState.xml
+
+# JetBrains Rider / VS Code
+.idea/
+.vscode/
+
+# Test results and coverage
+[Tt]est[Rr]esult*/
+*.trx
+coverage*.xml
+coverage*.json
+coverage*.info
+
+# NuGet packages
+*.nupkg
+*.snupkg
+**/[Pp]ackages/*
+!**/[Pp]ackages/build/
+
+# Temporary files and logs
+*.cache
+*.tmp
+*.temp
+*.log
+*.bak
+*.swp
+*~
+
+# Operating system files
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+.DS_Store

@@ -1,0 +1,22 @@
+<Window x:Class="UltraZip.Views.ArchiveCommentDialog"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="压缩文件注释" Width="600" Height="400" MinWidth="420" MinHeight="280"
+        WindowStartupLocation="CenterOwner">
+    <Grid Margin="16">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <TextBlock x:Name="ArchivePathText" TextTrimming="CharacterEllipsis"
+                   Foreground="DimGray" Margin="0,0,0,10"/>
+        <TextBox x:Name="CommentText" Grid.Row="1" IsReadOnly="True" AcceptsReturn="True"
+                 TextWrapping="Wrap" VerticalScrollBarVisibility="Auto"
+                 HorizontalScrollBarVisibility="Auto" FontFamily="Microsoft YaHei UI"/>
+        <Grid Grid.Row="2" Margin="0,12,0,0">
+            <TextBlock x:Name="EmptyText" Foreground="DimGray" VerticalAlignment="Center"/>
+            <Button Content="关闭" Width="86" HorizontalAlignment="Right" IsCancel="True" IsDefault="True"/>
+        </Grid>
+    </Grid>
+</Window>
